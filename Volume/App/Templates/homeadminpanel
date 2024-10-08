@@ -1,0 +1,45 @@
+<body>
+
+    <div class="container my-5">
+        <h1>Администрирование пользователей</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                $$useritem$$
+            </tbody>
+        </table>
+        
+        <!-- Форма для добавления нового пользователя -->
+        <h2>Add New User</h2>
+        <form action="/admin/users/create" method="post">
+            <div class="form-group">
+                <label for="login">Username:</label>
+                <input type="text" class="form-control" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Роль:</label>
+                <select id="role" name="role" required>
+                  <option value="">Выберите роль</option>
+                  <option value="1">Администратор</option>
+                  <option value="2">Юзер</option>
+                </select>
+              </div>
+            <button type="submit" class="btn btn-primary">Add User</button>
+        </form>
+    </div>
+</body>

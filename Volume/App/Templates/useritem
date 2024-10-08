@@ -1,0 +1,14 @@
+<tr>
+    <td>$$id$$</td>
+    <td>$$login$$</td>
+    <td>$$email$$</td>
+    <td>
+        <a href="/adminupdate/$$id$$" class="btn btn-primary btn-sm">Edit</a>
+        
+    </td>
+    <td>
+        <form action="/admin/users/delete/$$id$$" method="POST">
+            <input type="submit" class="btn btn-danger btn-sm">Delete</button>
+            </form>
+    </td>
+</tr>

@@ -1,0 +1,1 @@
+INSERT INTO users (id, email, password, role, age, sex, name, last_name, login) values (1, 'Adminich@mail.com', '\$2y$10\$rz2qp9.88sTE4jPcHC7VmOhVIFLRnZK7AMcgj5HbnXp/0NLpRSL2S', 1, 52, 'M','Patric', 'Star', 'Patrus'),(2, 'bobius@mail.com', '\$2y$10\$rz2qp9.88sTE4jPcHC7VmOhVIFLRnZK7AMcgj5HbnXp/0NLpRSL2S', 2, 13, 'F','Spange', 'Bob', 'Spunger');

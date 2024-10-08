@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS roles (id serial PRIMARY KEY, role_name VARCHAR(255) NOT NULL);

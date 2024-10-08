@@ -1,0 +1,10 @@
+<div class="mb-3">
+  <form action="/directories/add"  method="post" enctype="multipart/form-data">
+    <p>
+        <label>Create dir </label><br/>
+        <input type="text" name="name" value="Новая папка"/><br/>
+        <input type="hidden" name="path" value="$$path$$"/><br/>
+    </p>
+  <input type="submit"/>
+</form>
+</div>

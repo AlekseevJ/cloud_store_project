@@ -1,0 +1,18 @@
+<form action="/user/register" method="post">
+    <label for="username">*login:</label><br>
+    <input type="text" id="login" name="login" required><br>
+
+    <label for="email">*Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="password">*Password:</label><br>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="age">age:</label><br>
+    <input type="text" id="age" name="age"><br>
+
+    <label for="name">name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <input type="submit" value="Register">
+</form>

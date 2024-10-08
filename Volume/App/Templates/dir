@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" style="height: 20px; width: 20px;" src="data:image/jpeg;base64, $$image$$" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">$$name$$</p>        
+      <a href="$$aaa$$" class="btn btn-primary">Открыть папку</a>
+      <a href="$$delete$$" class="btn btn-primary">Удалить папку</a>
+      <a href="$$access$$" class="btn btn-primary">Управлять доступом</a>
+    </div>
+  </div>

@@ -1,0 +1,10 @@
+<div class="card"  style="width: 18rem; ">
+  <img class="card-img-top" style="height: 20px; width: 20px;" src="data:image/jpeg;base64, $$image$$" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">$$path$$</h5>
+    <p class="card-text">$$name$$</p>
+    <a href="$$aaa$$" class="btn btn-primary">Скачать</a>
+    <a href="$$delete$$" class="btn btn-primary">Удалить файл</a>
+    <a href="$$access$$" class="btn btn-primary">Управлять доступом</a>
+  </div>
+</div>

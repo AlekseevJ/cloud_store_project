@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выдача прав доступа к файлу</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <li><a href="/">Главная</a></li>
+    <div class="container">
+        <h2>Выдача прав доступа к файлу</h2>
+        <form action="/files/processor" method="POST" id="access-form">
+            
+            <div class="form-group">
+                <label for="user-list">Пользователи:</label>
+                <select id="user-list" name="user-ids" multiple>
+                    $$optionusers$$
+                </select>
+            </div>
+            <input type="hidden" name="idFile" value="$$idfileplace$$">
+            <div class="form-group">
+                <label for="permissions">Права доступа:</label>
+                <input type="checkbox" id="read" name="permissions" value="true"> Дать доступ
+                <input type="checkbox" id="write" name="permissions" value="false"> Доступ я не дам
+            </div>
+            <button type="submit">Обновить права доступа</button>
+        </form>
+    </div>
+</body>
+</html>
